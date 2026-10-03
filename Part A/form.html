@@ -1,0 +1,247 @@
+<!DOCTYPE html> <html lang="en"> <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>AltSchool Africa - Application Form</title> 
+</head> 
+<body> 
+    <header> <nav aria-label="Main navigation"> 
+        <a href="index.html">Home</a> |
+        <a href="form.html" aria-current="page">Application Form</a> 
+    </nav> </header> <main> <header> 
+        <h1>AltSchool Africa Application Form</h1> 
+        <p>Fill in your details below to begin your application.</p> 
+    </header>
+<form action="#" method="post">
+
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <p>
+      <label for="first-name">First Name:</label><br>
+      <input
+        type="text"
+        id="first-name"
+        name="first_name"
+        autocomplete="given-name"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="last-name">Last Name:</label><br>
+      <input
+        type="text"
+        id="last-name"
+        name="last_name"
+        autocomplete="family-name"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="email">Email Address:</label><br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="phone">Phone Number:</label><br>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        autocomplete="tel"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="date-of-birth">Date of Birth:</label><br>
+      <input
+        type="date"
+        id="date-of-birth"
+        name="date_of_birth"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="gender">Gender:</label><br>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+      </select>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <p>
+      <label for="country">Country:</label><br>
+      <input
+        type="text"
+        id="country"
+        name="country"
+        autocomplete="country-name"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="state">State/Region:</label><br>
+      <input
+        type="text"
+        id="state"
+        name="state"
+        autocomplete="address-level1"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="address">Address:</label><br>
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="40"
+        autocomplete="street-address"
+        required
+      ></textarea>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Program Information</legend>
+
+    <p>
+      <label for="school">School:</label><br>
+      <select id="school" name="school" required>
+        <option value="">-- Select School --</option>
+        <option value="school-of-engineering">School of Engineering</option>
+        <option value="school-of-data">School of Data</option>
+        <option value="school-of-product">School of Product</option>
+        <option value="school of business">School of Business</option>
+        <option value="school-of-creative-economy">School of Creative Economy</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="course">Course of Study:</label><br>
+      <select id="course" name="course" required>
+        <option value="">-- Select Course --</option>
+        <option value="javascript for beginners">Javascript for Beginners</option>
+        <option value="ai-powered fullstack engineering">AI-Powered Fullstack Engineering</option>
+        <option value="cloud-engineering">Cloud Engineering</option>
+        <option value="cyber security">Cyber security</option>
+        <option value="music business and afrobeats">Music Business and Afrobeats</option>
+        <option value="technical product management">Technical Product Management</option>
+        <option value="launchpad">Launchpad</option>
+        <option value="content creation">Content Creation</option>
+        <option value="sales">Sales</option>
+        <option value="digital marketing automation and sales">Digital Marketing Automation and Sales</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="learning-reason">Why do you want to join AltSchool Africa?</label><br>
+      <textarea
+        id="learning-reason"
+        name="learning_reason"
+        rows="6"
+        cols="50"
+        required
+      ></textarea>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Account Information</legend>
+
+    <p>
+      <label for="password">Password:</label><br>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        autocomplete="new-password"
+        minlength="8"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="confirm-password">Confirm Password:</label><br>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm_password"
+        autocomplete="new-password"
+        minlength="8"
+        required
+      >
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>How did you hear about us?</legend>
+
+    <p>
+      <label for="referral">Referral Source:</label><br>
+      <select id="referral" name="referral" required>
+        <option value="">-- Select an option --</option>
+        <option value="friend">Friend or Family</option>
+        <option value="social-media">Social Media</option>
+        <option value="search-engine">Search Engine</option>
+        <option value="advertisement">Advertisement</option>
+        <option value="event">Event</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Agreement</legend>
+
+    <p>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">
+        I agree to the terms and conditions and confirm that the information
+        provided is accurate.
+      </label>
+    </p>
+
+    <p>
+      <input type="checkbox" id="updates" name="updates">
+      <label for="updates">
+        I would like to receive updates and relevant information about AltSchool Africa.
+      </label>
+    </p>
+
+  </fieldset>
+
+  <p>
+    <button type="submit">Submit Application</button>
+    <button type="reset">Reset Form</button>
+  </p>
+
+</form>
+
+</main> <footer> <address> Samuel Ekpung<br> Lagos, Nigeria<br> samuelekpung9@gmail.com</address>
+<p>&copy; 2026 Samuel Ekpung. All rights reserved.</p>
+
+</footer> </body> </html>
