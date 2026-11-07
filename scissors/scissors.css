@@ -1,0 +1,1015 @@
+
+/* =====================================
+   1. GLOBAL STYLES
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(Gilroy-Medium.ttf);
+:root {
+    --blue: #0865ed;
+    --dark: #17364d;
+    --navy: #19364d;
+    --light: #f5f9ff;
+    --text: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Giiroy-medium'
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: ;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 85px 0;
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-heading span {
+    color: var(--blue);
+}
+
+.section-description {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =====================================
+   2. BUTTONS
+===================================== */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #004bbd;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.btn-outline:hover {
+    background: var(--blue);
+    color: white;
+}
+
+/* =====================================
+   3. NAVIGATION
+===================================== */
+
+header {
+    width: 100%;
+    background: url(aurora.svg);
+    background-repeat:no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,.04);
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--blue);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--dark);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #141414;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 100%;
+    gap: 24px;
+    color: #0065FE;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 26px;
+}
+
+/* =====================================
+   4. HERO SECTION
+===================================== */
+
+.hero {
+    background-image: url(aurora.svg);
+    background-repeat: no-repeat;
+    min-height: 620px;
+    padding: 110px 0 70px;
+    text-align: center;
+
+
+}
+.brush-stroke{
+ margin-top: -40px;
+ 
+}
+
+.hero h1 {
+    max-width: 1446px;
+    margin: 0 auto 20px;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 96px;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero p {
+    font-family: sans-serif;
+    padding-top: 16px;
+    max-width: 781px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #141414;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.hero h6{
+
+color: #E2E9F0;
+}
+
+.learn-more {
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+    
+
+
+.link-illustration {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #d6e2f0;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #eef4fa, #fff);
+    box-shadow: 0 15px 40px rgba(20,60,100,.08);
+}
+
+.chain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 35px;
+    color: #68798a;
+}
+
+.chain .arrow {
+    color: var(--blue);
+    font-size: 30px;
+}
+
+.link-illustration p {
+    font-size: 11px;
+    margin: 20px auto 0;
+}
+
+/* =====================================
+   5. STATISTICS SECTION
+===================================== */
+
+.stats {
+    display: flex;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    align-items: center;
+    gap: 72px;
+
+}
+
+.stats-heading h2 {
+    font-size: 40px;
+    padding-right: 120px;
+    line-height: 48px;
+     white-space: nowrap;
+    letter-spacing: 0%;
+
+}
+strong{
+    color: #141414;
+}
+
+.stats-heading span {
+    color: var(--blue);
+}
+
+.stat h2 {
+    font-size: 32px;
+    padding-bottom: 68px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #141414;
+}
+
+/* =====================================
+   6. FEATURES SECTION
+===================================== */
+
+
+
+
+
+.features {
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 41% 59%;
+    align-items: start;
+    gap: 0;
+}
+
+/* Introduction */
+.feature-intro {
+    margin-right: 96px;
+    padding-left: 170px;
+}
+
+.section-heading {
+    font-size: 40px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #141414;
+    margin-bottom: 10px;
+margin-inline-start: -32px;
+    
+}
+
+.section-headings {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #141414;
+    margin-bottom: 10px;
+margin-inline-start: -32px;
+
+
+}
+
+.section-headings span {
+    color: #1768e8;
+}
+
+
+.section-descriptions {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 370px;
+    font-weight: 400;
+    margin-inline-start: -28px;
+    padding-block-start: 16px;
+    
+
+    }
+
+
+    .section-description{
+        font-size: 16px;
+        line-height: 24px;
+        font-family: sans-serif;
+        color: #141414;
+    }
+/* Feature grid */
+.feature-grid {
+    margin-inline-start: -60px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1px;
+    row-gap: 50px;
+}
+
+.feature-card {
+    padding: 0;
+}
+
+.feature-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e5efff;
+    margin-bottom: 20px;
+}
+
+.feature-icon img {
+    width: 19px;
+    height: 19px;
+}
+
+.feature-card h3 {
+    max-width: 340px;
+    font-size: 32px;
+    color: #141414;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.feature-card {
+    font-size: 16px;
+    line-height: 24px;
+    color:#141414;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .feature-intro {
+        padding-right: 0;
+    }
+
+    .section-heading {
+        white-space: normal;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .feature-card h3 {
+        font-size: 19px;
+    }
+}
+
+
+/* =====================================
+   7. PRICING SECTION
+===================================== */
+
+.pricing {
+    text-align: center;
+    background: #fff;
+}
+.pricings{
+    padding-inline-start: 100px;
+}
+
+.pricing-cards {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1088px;
+    max-height: 627px;
+    margin-top: 218px;
+    padding-inline: 176px;
+    border-radius: 12px;
+    margin: 55px auto 35px;
+    align-items: baseline;
+}
+.section-heading h2{
+    padding-bottom: 68px;
+}
+.section-heading p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 400px;
+}
+
+.price-card {
+    border: 1px solid #dce5ef;
+    padding: 45px 30px;
+    text-align: left;
+    background: white;
+    border-radius: 5px;
+}
+
+.price-card h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    
+}
+
+.price {
+    padding-top: 34px;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 12px 0 5px;
+}
+
+.price-card .description {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.price-card ul {
+    list-style: none;
+}
+
+.price-card li {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 16px 0;
+}
+
+.price-card li::before {
+    content: url(check-circle.svg);
+    color: var(--blue);
+    margin-right: 9px;
+    font-weight: bold;
+}
+
+.price-card.professional {
+    background: var(--navy);
+    color: white;
+    padding: 65px 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.professional .description {
+    color: #d3dce4;
+}
+
+.professional li::before {
+    color: #8ec2ff;
+}
+
+.btn .btn-outline{
+    width: 200px;
+    height: 48px;
+    gap: 10px;
+}
+
+
+
+
+.pricing-buttons {
+    display: flex;
+    width: 412px;
+    margin-top: 68px;
+    margin-left: 400px;
+    max-height: 48px;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* =====================================
+   8. URL SHORTENER SECTION
+===================================== */
+
+.shortener {
+    background-image: url(Desktop\ -\ 11.svg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 65px 20px;
+}
+
+.shortener-box {
+    max-width: 476px;
+    height: 355px;
+    background: white;
+    margin: auto;
+    padding: 35px;
+    border-radius: 8px;
+}
+h5{
+    font-size: 14px;
+    padding-block-start: 22px;
+    padding-inline-start: 10px;
+    color: #4991FF;
+}
+
+.shortener-box input,
+.shortener-box select {
+    color: #3284FF;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #b9cce0;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.shortener-box input:focus,
+.shortener-box select:focus {
+    border-color: var(--blue);
+    color: #3284FF;
+}
+
+.input-row {
+    color: #3284FF;
+    display: flex;
+    gap: 12px;
+}
+
+.input-row > * {
+    width: 50%;
+    color: #3284FF;
+}
+
+.shortener-box button {
+    width: 100%
+
+
+
+}
+
+
+
+.shortener-box small {
+
+    display: block;
+    font-size: 10px;
+    color: #777;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+.trim-btn {
+  /* Set a smaller max-width (e.g., 200px instead of 392px) */
+  width: 100%;
+  max-width: 392px; 
+  
+  /* Reduce padding to shrink vertical/horizontal content space */
+  padding: 8px 16px; 
+  
+  /* Optional: adjust text size */
+  font-size: 14px; 
+  
+  /* Maintain styling */
+  background-color: #005AE2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    padding: 12px;
+    background: #eef5ff;
+    border-radius: 5px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+#result a {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* =====================================
+   9. FAQ SECTION
+===================================== */
+
+.faq-list details {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 5px;
+    width: 766px;
+}
+
+.faq-list summary {
+    width: 766px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 32px;
+    color: #141414;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    content: "+";
+    position: absolute;
+    right: 5px;
+    font-size: 22px;
+    top: -5px;
+    color: #333;
+}
+
+.faq-list details[open] summary::after {
+    content: "−";
+    color: var(--blue);
+}
+
+.faq-list details p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #141414;
+    padding-top: 15px;
+    max-width: 750px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    padding-top: 33px;
+}
+
+.jogg {
+    width: 100%;
+    height: 299px;
+    background: linear-gradient(
+        110deg,
+        #1c3448,
+        #1d3449,
+        #192e42
+    );
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background decorative shapes */
+
+
+/* Left abstract wave */
+.jogg{
+    background-image: url(Desktop\ -\ 11.svg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/* Hero content */
+.jogg-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.jogg-content {
+    
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 29px;
+    letter-spacing: -0.7px;
+}
+
+.jogg-content button {
+    background: #0860ed;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 37px;
+    min-width: 134px;
+    height: 33px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.jogg-content button:hover {
+    background: #004bc4;
+}
+
+/* Footer text */
+.footer-text {
+    position: absolute;
+    bottom: 8px;
+    left: 2px;
+    color: #8594a1;
+    font-size: 10px;
+    z-index: 2;
+}
+
+
+
+
+
+/* =====================================
+   10. FOOTER
+===================================== */
+
+footer {
+    background: url(Group\ 3.svg);
+    background-repeat: repeat-y;
+
+    padding: 75px 0 25px;
+}
+
+.footer-grid {
+    background: url(Vector\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: grid;
+    grid-template-columns: 1.2fr repeat(4, 1fr);
+    gap: 35px;
+}
+
+.footer-brand .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    font-size: 19px;
+}
+
+.social-links a:hover {
+    color: var(--blue);
+}
+
+.footer-column h4 {
+    color: #112232;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.footer-column a {
+
+    display: block;
+    font-size: 16px;
+    color: #112232
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    color: var(--blue);
+}
+
+.footer-bottom {
+
+    background-position: right;
+    border-top: 1px solid #eee;
+    margin-top: 55px;
+    padding-right 12px;
+    font-size: 14px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 10px;
+    color: #112232
+}
+
+/* =====================================
+   11. TABLET RESPONSIVENESS
+===================================== */
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    /* Navigation */
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 25px;
+        flex-direction: column;
+        gap: 22px;
+        box-shadow: 0 10px 15px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-actions {
+        gap: 10px;
+    }
+
+    .nav-actions .login {
+        display: none;
+    }
+
+    /* Hero */
+
+    .hero {
+        padding: 75px 0 55px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        line-height: 1.4;
+    }
+
+    .chain {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Statistics */
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .stats-heading {
+        grid-column: span 2;
+    }
+
+    /* Features */
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .feature-grid {
+        gap: 25px 15px;
+    }
+
+    /* Pricing */
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 15px;
+    }
+
+    .price-card.professional {
+        padding: 45px 30px;
+    }
+
+    .pricing-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* FAQ */
+
+    .faq-list summary {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* =====================================
+   12. SMALL MOBILE RESPONSIVENESS
+===================================== */
+
+@media(max-width: 380px) {
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .shortener-box {
+        padding: 22px;
+    }
+
+    .input-row {
+        gap: 7px;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+    .section-heading {
+        font-size: 25px;
+    }
+
+}
